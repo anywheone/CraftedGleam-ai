@@ -1,34 +1,50 @@
 # Python関連のコンパイル済みファイル
-__pycache__/        # Pythonのコンパイル済みキャッシュを無視
-*.pyc               # Pythonのバイトコードファイルを無視
-*.pyo               # Pythonの最適化バイトコードファイルを無視
-*.pyd               # Pythonの拡張モジュールファイルを無視
+__pycache__/           # Pythonのコンパイル済みキャッシュを無視
+*.pyc                  # Pythonのバイトコードファイルを無視
+*.pyo                  # Pythonの最適化バイトコードファイルを無視
+*.pyd                  # Pythonの拡張モジュールファイルを無視
 
 # データベースファイル（SQLiteなど）
-*.db                # SQLiteデータベースファイルを無視
-*.sqlite3           # SQLiteのデータベースファイルを無視
+*.db                   # SQLiteデータベースファイルを無視
+*.sqlite3              # SQLiteのデータベースファイルを無視
 
 # 環境変数ファイル
-*.env               # 環境変数設定ファイルを無視（.env）
+*.env                  # 環境変数設定ファイルを無視（.env）
 
 # 仮想環境関連
-venv/               # 仮想環境ディレクトリを無視
-env/                # 仮想環境ディレクトリを無視
+venv/                  # 仮想環境ディレクトリを無視
+env/                   # 仮想環境ディレクトリを無視
 
 # ログファイル
-*.log               # ログファイルを無視
+*.log                  # ログファイルを無視
 
 # IDE/エディタ設定ファイル
-.vscode/            # VSCodeの設定ディレクトリを無視
-.idea/              # JetBrains製IDE（PyCharmなど）の設定ディレクトリを無視
+.vscode/               # VSCodeの設定ディレクトリを無視
+.idea/                 # JetBrains製IDE（PyCharmなど）の設定ディレクトリを無視
 
 # Jupyter関連（もし使用している場合）
-.ipynb_checkpoints/ # Jupyterノートブックのチェックポイントを無視
+.ipynb_checkpoints/    # Jupyterノートブックのチェックポイントを無視
 
 # 依存関係管理ファイル（pipenv, poetryなど）
-Pipfile.lock        # Pipfileのロックファイルを無視（pipenvの場合）
-poetry.lock         # poetryのロックファイルを無視（poetryの場合）
+Pipfile.lock           # Pipfileのロックファイルを無視（pipenvの場合）
+poetry.lock            # poetryのロックファイルを無視（poetryの場合）
 
 # その他一時ファイル
-*.bak               # バックアップファイルを無視
-*.swp               # Vimのスワップファイルを無視
+*.bak                  # バックアップファイルを無視
+*.swp                  # Vimのスワップファイルを無視
+
+# Docker関連のファイル
+.dockerignore          # Dockerの無視設定ファイルを無視
+Dockerfile             # Dockerfile（通常は管理するが、ビルド中の一時ファイルは除外）
+docker-compose.override.yml  # プロジェクトの設定に依存したdocker-composeの上書き設定
+
+# システムファイル
+.DS_Store              # macOSのシステムファイルを無視
+Thumbs.db              # Windowsのサムネイルキャッシュを無視
+
+# ビルド/バイナリファイル
+*.exe                  # 実行可能ファイルを無視
+*.dll                  # ダイナミックリンクライブラリを無視
+*.so                   # Unix系システムの共有ライブラリを無視
+*.dmg                  # macOSのディスクイメージを無視
+*.pkg                  # macOSのインストーラーを無視
