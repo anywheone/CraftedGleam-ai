@@ -1,8 +1,6 @@
 # Python関連のコンパイル済みファイル
-craftedgleam_ai/__pycache__/           # Pythonのコンパイル済みキャッシュを無視
-craftedgleam_ai/__pycache__/*.pyc                  # Pythonのバイトコードファイルを無視
-craftedgleam_ai/__pycache__/*.pyo                  # Pythonの最適化バイトコードファイルを無視
-craftedgleam_ai/__pycache__/*.pyd                  # Pythonの拡張モジュールファイルを無視
+craftedgleam_ai/__pycache__/
+
 
 # データベースファイル（SQLiteなど）
 *.db                   # SQLiteデータベースファイルを無視
